@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+        rel="stylesheet">       
+        <link rel="stylesheet" href="./stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+        <script src="./Orders.js"></script>
+        <script src="./index.js"></script>
+       
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+
+
+<body>
+    <div class="EmployeesPage">
+    <aside id="sidebar">
+        <div class="top">
+            <div class="logo">
+                <h4 id="A">A</h4>
+                <h2 id="Alliance">Alliance</h2>
+            </div>
+
+            <!-- <div class="close" id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </div> -->
+
+            <div class="menu" id="menu-btn">
+                <span class="material-icons-sharp">menu</span>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a href="./dashboard.html">
+                <span class="material-icons-sharp">dashboard</span>
+                <h3>Dashborad</h3>
+            </a>
+            <a href="./customers.html">
+                <span class="material-icons-sharp">person_outline</span>
+                <h3>Customers</h3>
+            </a>
+            <a href="./Employees.html">
+                <span class="material-icons-sharp">contacts</span>
+                <h3>Employees</h3>
+            </a>
+            <a href="./dashboard.html #Orders">
+                <span class="material-icons-sharp">receipt_long</span>
+                <h3>Orders</h3>
+            </a>
+            
+            <a href="./dashboard.html #insights">
+                <span class="material-icons-sharp">insights</span>
+                <h3>Analytics</h3>
+            </a>
+            <a href="./inventory.html">
+                <span class="material-icons-sharp">inventory</span>
+                <h3>Inventory</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">report</span>
+                <h3>Reports</h3>
+                <span class="message-count">15</span>
+            </a>
+            
+            <a href="./addproduct.html">
+                <span class="material-icons-sharp">add</span>
+                <h3>Add Product</h3>
+            </a>
+            <a href="./login.html">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+
+        </div>
+       
+
+    </aside>
+    <div class="EmployeesMain">
+        <div class="Table" id="employeetable">
+            <div class="EmployeesMainTop">
+                 <h1>Employees</h1>
+                 <a class="addingEmployee"  href="./AddEmplyee.html">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Employee</h3>
+                </a>
+                <div class="right">
+                    <div class="top">
+                        <div id="theme">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+                        <div class="profile">
+                            <div class="info">
+                                <p>Hey, <b>Ali</b></p>
+                                <small class="tex-muted">Admin</small>
+                            </div>
+                            <div class="profile-pic">
+                                <img src="profile.jpg" alt="admin profile photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Blood Type</th>
+                        <th>Email</th>
+                        <th>Mobile Number</th>
+                        <th>Role</th>
+                        
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ali chreim</td>
+                        <td class="m">Male</td>
+                        <td>A+</td>
+                        <td><a href="Alichreim@gmail.com"> Alichreim@gmail.com </a></td>
+                        <td>76 367374</td>
+                        
+                        <td class="delete" id="deleterow1"><span class="material-symbols-sharp">
+                            delete
+                            </span></td>
+                    </tr>
+                   
+
+                    
+                   
+                     
+                        
+                       
+                        
+                     
+                    
+                </tbody>
+            </table>
+            <a href="#">See More</a>
+
+        </div>
+    </div>
+</div>
+    
+
+</body>
+</html>

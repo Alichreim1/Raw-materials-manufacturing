@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+        rel="stylesheet">       
+        <link rel="stylesheet" href="./stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron:wght@400;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+        <script src="./Orders.js"></script>
+        <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="AddEmployeePage">
+    <aside id="sidebar">
+        <div class="top">
+            <div class="logo">
+                <h4 id="A">A</h4>
+                <h2 id="Alliance">Alliance</h2>
+            </div>
+
+            <!-- <div class="close" id="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </div> -->
+
+            <div class="menu" id="menu-btn">
+                <span class="material-icons-sharp">menu</span>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a href="./dashboard.html">
+                <span class="material-icons-sharp">dashboard</span>
+                <h3>Dashborad</h3>
+            </a>
+            <a href="./customers.html">
+                <span class="material-icons-sharp">person_outline</span>
+                <h3>Customers</h3>
+            </a>
+            <a href="./Employees.html">
+                <span class="material-icons-sharp">contacts</span>
+                <h3>Employees</h3>
+            </a>
+            <a href="./dashboard.html #Orders">
+                <span class="material-icons-sharp">receipt_long</span>
+                <h3>Orders</h3>
+            </a>
+            <a href="./editmenu.html">
+                <span class="material-icons-sharp">restaurant</span>
+                <h3>Edit Menu</h3>
+            </a>
+            <a href="./dashboard.html #insights">
+                <span class="material-icons-sharp">insights</span>
+                <h3>Analytics</h3>
+            </a>
+            <a href="./inventory.html">
+                <span class="material-icons-sharp">inventory</span>
+                <h3>Inventory</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">report</span>
+                <h3>Reports</h3>
+                <span class="message-count">15</span>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">discount</span>
+                <h3>Promotions</h3>
+            </a>
+            <a href="./addproduct.html">
+                <span class="material-icons-sharp">add</span>
+                <h3>Add Product</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+
+        </div>
+       
+
+    </aside>
+    <div class="AddEmployeeMain">
+        <div class="Table">
+            <div class="AddEmployeeMainTop">
+                 <h1>Add Employee</h1>
+                <div class="right">
+                    <div class="top">
+                        <div id="theme">
+                            <span class="material-icons-sharp active">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+                        <div class="profile">
+                            <div class="info">
+                                <p>Hey, <b>Ali</b></p>
+                                <small class="tex-muted">Admin</small>
+                            </div>
+                            <div class="profile-pic">
+                                <img src="./AliAllouche-pic.jpeg" alt="admin profile photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form  method="post" action="./Employees.html">
+                <p>
+                <label>Fisrt Name: <br>
+                    <input type = "text" placeholder = "Enter First Name" 
+                       required />
+                 </label>
+                </p>
+                <p>
+                 <label>Last Name: <br>
+                    <input type = "text" placeholder = "Enter Last Name" 
+                       required />
+                 </label>
+                </p>
+                <p>
+                    
+                 <label>Gender:
+                    <select name="Gender" required>
+                        <option></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                    
+                 </label>
+
+                </p>
+                <p>
+                    <label>Date of Birth: <br>
+                        <input type="date" name="dateofbirth" required>
+                    </label>
+                </p>
+                <p>
+                <label>Email:<br>
+                    <input type = "email" autofocus placeholder = "name@domain.com" 
+                       required />
+                 </label>
+                </p>
+
+                <p>
+                    <label>Blood Type: 
+                       <select name="Blood Type" required>
+                           <option></option>
+                           <option>A+</option>
+                           <option>A-</option>
+                           <option>B+</option>
+                           <option>B-</option>
+                           <option>O+</option>
+                           <option>O-</option>
+                       </select>
+                       
+                    </label>
+   
+                   </p>
+                   <p>
+                    <label>Tel:<br>
+                       <input type = "tel" placeholder = "(##) ###-###"
+                          pattern = "\(\d{2}\) \d{3}-\d{3}" required />
+                          
+                    </label>
+                 </p>
+                    <p>
+                        <label>Address:<br>
+                            <input type = "text" placeholder = "Enter Address" 
+                            required />
+                        </label>
+                    </p>
+                    <p>
+                        <label>Role: 
+                            <select name="Role" required>
+                                <option></option>
+                                <option>Kitchen Staff</option>
+                                <option>Head Waiter</option>
+                                <option>Receptionist</option>
+                                <option>Waiter</option>
+                                <option>Bar staff</option>
+                                <option>Cleaning team</option>
+                                <option>Delivery</option>
+                            
+                            </select>
+                            
+                         </label>
+                        
+
+                    </p>
+                <p>
+                    <label>
+                        Comments:<br>
+                        <textarea name="comments" cols="40" rows="10" placeholder ="Enter Comments here"></textarea>
+                    </label>
+                </p>
+                <p class="btns">
+                <input type="submit" value="Add Employee">
+                <input type="reset" value="Reset">
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+    
+
+</body>
+</html>
